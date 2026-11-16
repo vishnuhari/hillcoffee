@@ -13,7 +13,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500..800;1,400..800&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -24,10 +24,10 @@
     <div class="container top-bar-content">
       <div class="top-tagline">
         <span class="badge-fresh">🔥 Fresh Batch Roasted</span>
-        <span>Small batch roasted in the Western Ghats • Ground for your brewer on the day of dispatch</span>
+        <span>Life happens. Coffee helps! • Small batch roasted in the Western Ghats • Ground on day of dispatch</span>
       </div>
       <a href="#finder" class="top-help-link">
-        <span>💬 WhatsApp Coffee Helper</span>
+        <span>💬 WhatsApp Coffee Matchmaker</span>
       </a>
     </div>
   </header>
@@ -50,10 +50,11 @@
       </a>
 
       <div class="nav-links">
+        <a href="#scenarios" class="nav-highlight-link">Daily Survival Guide</a>
         <a href="#collection">Our Coffees</a>
         <a href="#origin">The Region</a>
         <a href="#comparison">Arabica vs Robusta</a>
-        <a href="#finder">Coffee Finder</a>
+        <a href="#finder">Coffee Matchmaker</a>
         <a href="#brew-guide">Brew Guides</a>
       </div>
 
@@ -77,14 +78,15 @@
   <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="mobile-drawer-links">
+      <a href="#scenarios" class="mobile-link">Daily Survival Guide</a>
       <a href="#collection" class="mobile-link">Our Coffees</a>
       <a href="#origin" class="mobile-link">The Region</a>
       <a href="#comparison" class="mobile-link">Arabica vs Robusta</a>
-      <a href="#finder" class="mobile-link">Coffee Finder</a>
+      <a href="#finder" class="mobile-link">Coffee Matchmaker</a>
       <a href="#brew-guide" class="mobile-link">Brew Guides</a>
     </div>
     <div class="mobile-drawer-footer">
-      <p class="tag-handwritten">Real coffee from real hills.</p>
+      <p class="tag-handwritten">Life happens. Coffee helps.</p>
     </div>
   </div>
 
@@ -93,33 +95,59 @@
     <div class="hero-backdrop" style="background-image: url('images/hero.jpg');"></div>
     <div class="hero-overlay"></div>
     
+    <!-- Floating Playful Stickers -->
+    <div class="hero-sticker sticker-top-right" aria-hidden="true">
+      <span class="sticker-icon">☕</span>
+      <div class="sticker-text">
+        <strong>Life Happens.</strong>
+        <span>Coffee Helps!</span>
+      </div>
+    </div>
+    <div class="hero-sticker sticker-mid-left" aria-hidden="true">
+      <span class="sticker-icon">⚡</span>
+      <div class="sticker-text">
+        <strong>Snooze Nemesis</strong>
+        <span>Double Caffeine Robusta</span>
+      </div>
+    </div>
+
     <div class="container hero-container">
       <div class="hero-content">
         <div class="hero-brand-badge">
           <span class="brand-tag">THE HILLS COFFEE CO.</span>
-          <span class="handwritten-accent">Real coffee from real hills.</span>
+          <span class="handwritten-accent">Real coffee for real chaos.</span>
         </div>
         
         <h1 class="hero-title">
-          Three coffees.<br>
-          <span class="hero-highlight">One incredible region.</span>
+          <span class="hero-title-top">LIFE HAPPENS.</span><br>
+          <span class="hero-highlight wiggle-text">COFFEE HELPS.</span>
         </h1>
         
-        <p class="hero-subtitle">
-          Authentic. Aromatic. From the mist-draped hills of Idukki.
-        </p>
+        <div class="hero-quote-card">
+          <p class="hero-situations-text">
+            The meeting that could've been an email. The alarm you snoozed five times. The friend who is always late. The weekend you refuse to leave your bed.
+          </p>
+          <div class="hero-cup-promise">
+            <span class="cup-bounce">☕</span>
+            <span class="cup-promise-text">We've got a cup for you.</span>
+            <span class="sparkle-accent">✨</span>
+          </div>
+        </div>
 
         <p class="hero-desc">
-          Shade-grown under rainforest canopies alongside wild pepper, cardamom, and arecanut. Small-batch roasted to honor Kerala’s premier high-altitude terroir.
+          Authentic, aromatic shade-grown coffee cultivated in the mist of Idukki's high ranges alongside wild pepper and cardamom. Small-batch roasted to power you through every hilarious, chaotic twist of everyday life.
         </p>
 
         <div class="hero-buttons">
-          <a href="#collection" class="btn btn-primary">
-            <span>Explore The 3 Coffees</span>
+          <a href="#scenarios" class="btn btn-primary btn-bounce">
+            <span>Find Your Cup For Today</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
-          <a href="#finder" class="btn btn-secondary">
-            <span>Find Your Coffee Match</span>
+          <a href="#collection" class="btn btn-secondary">
+            <span>Explore The 3 Coffees</span>
+          </a>
+          <a href="#finder" class="btn btn-hero-wa">
+            <span>💬 WhatsApp Matchmaker</span>
           </a>
         </div>
 
@@ -136,8 +164,248 @@
           <div class="meta-divider"></div>
           <div class="meta-item">
             <span class="meta-val">Day 1</span>
-            <span class="meta-label">Fresh Ground</span>
+            <span class="meta-label">Fresh Roasted</span>
           </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-val">0%</span>
+            <span class="meta-label">Chicory / Fillers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Playful Infinite Marquee Banner -->
+  <div class="fun-marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span class="mq-item highlight-yellow">☕ LIFE HAPPENS. COFFEE HELPS.</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">📧 The meeting that could've been an email</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">⏰ The alarm you snoozed five times</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">🐢 The friend who is always late</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">🛌 The weekend you refuse to leave your bed</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item highlight-coral">✨ WE'VE GOT A CUP FOR YOU!</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">🌿 100% Shade-Grown in Idukki Hills</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">🔥 Zero Chicory, Just Pure Joy</span>
+        <span class="mq-dot">✦</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span class="mq-item highlight-yellow">☕ LIFE HAPPENS. COFFEE HELPS.</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">📧 The meeting that could've been an email</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">⏰ The alarm you snoozed five times</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">🐢 The friend who is always late</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">🛌 The weekend you refuse to leave your bed</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item highlight-coral">✨ WE'VE GOT A CUP FOR YOU!</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">🌿 100% Shade-Grown in Idukki Hills</span>
+        <span class="mq-dot">✦</span>
+        <span class="mq-item">🔥 Zero Chicory, Just Pure Joy</span>
+        <span class="mq-dot">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Life Happens: Scenario Navigator Section -->
+  <section class="scenarios-section" id="scenarios">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="fun-section-pill">
+          <span class="pill-emoji">🎯</span>
+          <span class="pill-text">THE DAILY SURVIVAL GUIDE</span>
+        </div>
+        <h2 class="section-title">
+          Life Happens. <span class="fun-highlight-sketch">Coffee Helps.</span>
+        </h2>
+        <p class="section-lead">
+          Real life is unpredictable, chaotic, and occasionally ridiculous. Fortunately, we've roasted a specific hill coffee for every single crisis. Which one are you surviving today?
+        </p>
+      </div>
+
+      <!-- 4 Interactive Life Scenario Cards -->
+      <div class="scenarios-grid">
+        
+        <!-- Scenario 1: Meeting -->
+        <article class="scenario-card card-meeting" data-coffee="arabica">
+          <div class="scenario-badge-pop pop-meeting">
+            <span class="scenario-icon">📧</span>
+            <span class="scenario-tag">Corporate Survival</span>
+          </div>
+          <h3 class="scenario-title">The meeting that could've been an email.</h3>
+          <p class="scenario-quote">
+            &ldquo;Camera off, mic muted, nodding solemnly while sipping sanity.&rdquo;
+          </p>
+          <div class="scenario-remedy-box">
+            <div class="remedy-header">
+              <span class="remedy-label">YOUR CUP REMEDY</span>
+              <span class="remedy-coffee-name">Idukki Arabica (Pour-Over)</span>
+            </div>
+            <p class="remedy-desc">
+              Smooth, aromatic chocolate and spice notes that keep your heart rate steady and blood pressure low through 47 slides of corporate synergy.
+            </p>
+            <div class="remedy-tags">
+              <span class="remedy-tag">🧘 Zen Mode</span>
+              <span class="remedy-tag">🍫 Chocolate &amp; Spice</span>
+              <span class="remedy-tag">✨ Gentle Clarity</span>
+            </div>
+          </div>
+          <div class="scenario-actions">
+            <button class="btn btn-scenario-add" onclick="quickAddRecommendation('Idukki Arabica', 460)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span>Add This Cup (₹460)</span>
+            </button>
+            <button class="btn btn-scenario-ghost" onclick="filterByProduct('arabica')">
+              <span>See Bean &rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Scenario 2: Alarm -->
+        <article class="scenario-card card-alarm" data-coffee="robusta">
+          <div class="scenario-badge-pop pop-alarm">
+            <span class="scenario-icon">⏰</span>
+            <span class="scenario-tag">Morning Emergency</span>
+          </div>
+          <h3 class="scenario-title">The alarm you snoozed five times.</h3>
+          <p class="scenario-quote">
+            &ldquo;7:48 AM panic sprint. Your physical body is standing, your soul is still asleep.&rdquo;
+          </p>
+          <div class="scenario-remedy-box">
+            <div class="remedy-header">
+              <span class="remedy-label">YOUR CUP REMEDY</span>
+              <span class="remedy-coffee-name">Idukki Robusta (Filter Coffee)</span>
+            </div>
+            <p class="remedy-desc">
+              Grown high in the shade, this GI-tagged powerhouse delivers double the caffeine punch with a dense crema that defibrillates your sleepy brain in two sips.
+            </p>
+            <div class="remedy-tags">
+              <span class="remedy-tag">⚡ Turbo Kick</span>
+              <span class="remedy-tag">🔥 2x Natural Caffeine</span>
+              <span class="remedy-tag">🥛 Rich With Milk</span>
+            </div>
+          </div>
+          <div class="scenario-actions">
+            <button class="btn btn-scenario-add" onclick="quickAddRecommendation('Idukki Robusta', 420)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span>Add This Cup (₹420)</span>
+            </button>
+            <button class="btn btn-scenario-ghost" onclick="filterByProduct('robusta')">
+              <span>See Bean &rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Scenario 3: Late Friend -->
+        <article class="scenario-card card-friend" data-coffee="blend">
+          <div class="scenario-badge-pop pop-friend">
+            <span class="scenario-icon">🐢</span>
+            <span class="scenario-tag">Infinite Patience</span>
+          </div>
+          <h3 class="scenario-title">The friend who is always late.</h3>
+          <p class="scenario-quote">
+            &ldquo;‘Leaving now!’ (They just entered the shower). You're at the table alone with your phone.&rdquo;
+          </p>
+          <div class="scenario-remedy-box">
+            <div class="remedy-header">
+              <span class="remedy-label">YOUR CUP REMEDY</span>
+              <span class="remedy-coffee-name">Idukki Blend (All-Rounder)</span>
+            </div>
+            <p class="remedy-desc">
+              The harmonious union of Arabica and Robusta. Stays delicious and never bitter even as it cools down, granting you infinite Zen while waiting 30 minutes.
+            </p>
+            <div class="remedy-tags">
+              <span class="remedy-tag">🤝 Crowd Pleaser</span>
+              <span class="remedy-tag">☕ Sips Good Cold Too</span>
+              <span class="remedy-tag">🌿 Balanced Notes</span>
+            </div>
+          </div>
+          <div class="scenario-actions">
+            <button class="btn btn-scenario-add" onclick="quickAddRecommendation('Idukki Blend', 440)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span>Add This Cup (₹440)</span>
+            </button>
+            <button class="btn btn-scenario-ghost" onclick="filterByProduct('blend')">
+              <span>See Bean &rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Scenario 4: Bed Weekend -->
+        <article class="scenario-card card-weekend" data-coffee="trio">
+          <div class="scenario-badge-pop pop-weekend">
+            <span class="scenario-icon">🛌</span>
+            <span class="scenario-tag">Cocoon Mode</span>
+          </div>
+          <h3 class="scenario-title">The weekend you refuse to leave your bed.</h3>
+          <p class="scenario-quote">
+            &ldquo;Zero plans. Blankets pulled up. Sunlight streaming in. Notifications muted permanently.&rdquo;
+          </p>
+          <div class="scenario-remedy-box">
+            <div class="remedy-header">
+              <span class="remedy-label">YOUR CUP REMEDY</span>
+              <span class="remedy-coffee-name">Trio Tasting Pack (All 3 Coffees)</span>
+            </div>
+            <p class="remedy-desc">
+              Why pick one when you have 48 hours of uninterrupted lounging? French press Arabica for morning reading, Robusta filter for afternoon kicks, Blend for movie night.
+            </p>
+            <div class="remedy-tags">
+              <span class="remedy-tag">☁️ Cozy Maximum</span>
+              <span class="remedy-tag">🎉 Full Flight Tasting</span>
+              <span class="remedy-tag">📦 3 x 250g Pouches</span>
+            </div>
+          </div>
+          <div class="scenario-actions">
+            <button class="btn btn-scenario-add" onclick="quickAddTrio()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span>Add Trio Pack (₹1,320)</span>
+            </button>
+            <a href="#collection" class="btn btn-scenario-ghost">
+              <span>See All &rarr;</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Big Bottom Banner: "We've got a cup for you." -->
+      <div class="cup-for-you-banner">
+        <div class="banner-bubble-art" aria-hidden="true">
+          <div class="steaming-cup-wrap">
+            <div class="steam-vapors">
+              <span class="vapor v1"></span>
+              <span class="vapor v2"></span>
+              <span class="vapor v3"></span>
+            </div>
+            <span class="banner-steaming-cup">☕</span>
+          </div>
+        </div>
+        <div class="banner-text-center">
+          <span class="banner-mini-tag">WHATEVER HAPPENS TODAY</span>
+          <h3 class="banner-headline">We've got a cup for you.</h3>
+          <p class="banner-subtext">
+            Whole beans or custom ground on the day of dispatch for French Press, South Indian Filter, or Pour-Over. No snobbery, just ridiculously good shade-grown hill coffee.
+          </p>
+        </div>
+        <div class="banner-actions-right">
+          <a href="#finder" class="btn btn-primary btn-bounce">
+            <span>Find My Match on WhatsApp</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#collection" class="btn btn-secondary-dark">
+            <span>Shop The 3 Coffees</span>
+          </a>
         </div>
       </div>
     </div>
@@ -147,7 +415,7 @@
   <section class="values-strip">
     <div class="container values-grid">
       <div class="value-card">
-        <div class="value-icon">
+        <div class="value-icon icon-ethical">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 22C12 22 20 18 20 10C20 5.58 16.42 2 12 2C7.58 2 4 5.58 4 10C4 18 12 22 12 22Z"/>
             <path d="M12 10V18"/>
@@ -156,24 +424,24 @@
         </div>
         <div class="value-text">
           <h3>Ethically Sourced</h3>
-          <p>Direct from smallholder hill farms in Idukki</p>
+          <p>Direct from smallholder hill farms in Idukki. Happy farmers, happier beans!</p>
         </div>
       </div>
 
       <div class="value-card">
-        <div class="value-icon">
+        <div class="value-icon icon-roasted">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 20L10 8L16 16L20 11L22 20H3Z"/>
           </svg>
         </div>
         <div class="value-text">
           <h3>Small Batch Roasted</h3>
-          <p>Carefully roasted for peak aroma & freshness</p>
+          <p>Roasted fresh in the Western Ghats for peak aroma, flavor &amp; smiles.</p>
         </div>
       </div>
 
       <div class="value-card">
-        <div class="value-icon">
+        <div class="value-icon icon-pure">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
             <line x1="16" y1="8" x2="2" y2="22"/>
@@ -181,13 +449,13 @@
           </svg>
         </div>
         <div class="value-text">
-          <h3>No Additives. Just Coffee</h3>
-          <p>Pure whole bean & ground coffee, zero chicory</p>
+          <h3>Zero Additives. Just Coffee</h3>
+          <p>Pure whole bean &amp; ground coffee. 100% chicory-free, zero shortcuts.</p>
         </div>
       </div>
 
       <div class="value-card">
-        <div class="value-icon">
+        <div class="value-icon icon-labels">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="9"/>
             <path d="M12 3C8.5 7 8.5 17 12 21"/>
@@ -196,7 +464,7 @@
         </div>
         <div class="value-text">
           <h3>Clear Labels</h3>
-          <p>100% transparent Arabica & Robusta classification</p>
+          <p>100% transparent Arabica &amp; Robusta. No snooty buzzwords, just good vibes.</p>
         </div>
       </div>
     </div>
@@ -206,34 +474,40 @@
   <section class="collection-section" id="collection">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-subtitle">THE COLLECTION</span>
-        <h2 class="section-title">Three Hill Coffees. Crafted For Every Cup.</h2>
+        <div class="fun-section-pill">
+          <span class="pill-emoji">☕</span>
+          <span class="pill-text">THE COFFEE PRESCRIPTION</span>
+        </div>
+        <h2 class="section-title">Crafted For Every <span class="fun-highlight-sketch">Mood &amp; Meltdown</span></h2>
         <p class="section-lead">
-          Whether you crave a bright morning pour-over, a velvety filter coffee with steamed milk, or a versatile daily brew, each bag embodies the distinct spirit of Idukki.
+          Whether you crave a bright pour-over to survive boring slide decks, a velvety filter coffee to reverse five snoozed alarms, or a cozy blend for a bed-bound Sunday, each bag embodies the wild spirit of Idukki.
         </p>
 
         <!-- Taste Filter Tabs -->
         <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-filter="all">All Coffees</button>
-          <button class="filter-tab" data-filter="black">Black & Pour-Over</button>
-          <button class="filter-tab" data-filter="milk">Milk & South Indian Filter</button>
+          <button class="filter-tab" data-filter="black">Black &amp; Pour-Over</button>
+          <button class="filter-tab" data-filter="milk">Milk &amp; Traditional Filter</button>
           <button class="filter-tab" data-filter="versatile">All-Rounder Blend</button>
+          <button class="filter-tab" data-filter="bundle">Weekend Trio Flight</button>
         </div>
       </div>
 
-      <!-- 3 Products Grid -->
+      <!-- Products Grid -->
       <div class="products-grid">
 
         <!-- 1. Idukki Arabica -->
         <article class="product-card card-arabica" data-category="black" data-id="arabica">
           <div class="card-badge-row">
             <span class="pill-type arabica-pill">ARABICA</span>
+            <span class="pill-crisis-tag">📧 Meeting Survivor</span>
             <span class="pill-weight">250 g</span>
           </div>
 
           <div class="product-img-wrap">
             <img src="images/arabica.jpg" alt="Idukki Arabica 250g coffee pouch" loading="lazy" class="product-img">
             <span class="flavor-floating-tag">Single Origin</span>
+            <span class="fun-card-sticker">🌿 Zen Mode</span>
           </div>
 
           <div class="product-details">
@@ -245,28 +519,26 @@
             </div>
 
             <p class="product-description">
-              Arabica from the lush hills of Idukki, grown in the shade with pepper and cardamom. Smooth and aromatic with notes of chocolate and spice. Perfect for black coffee, pour-over and French press.
+              Arabica from the lush hills of Idukki, grown in the shade with pepper and cardamom. Smooth and aromatic with notes of chocolate and spice. Perfect for black coffee, pour-over and keeping calm during 60-minute slide decks.
             </p>
 
-            <!-- Specification Badges (from original flyer) -->
+            <!-- Specification Badges -->
             <div class="specs-grid">
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Coffee Bean -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <ellipse cx="12" cy="12" rx="6" ry="9"/>
                     <path d="M12 3C10 7 10 17 12 21"/>
                   </svg>
                 </div>
                 <div class="spec-info">
-                  <span class="spec-title">Chocolate & Spice</span>
+                  <span class="spec-title">Chocolate &amp; Spice</span>
                   <span class="spec-sub">Flavor profile</span>
                 </div>
               </div>
 
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Coffee Cup -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
                     <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
@@ -275,14 +547,13 @@
                   </svg>
                 </div>
                 <div class="spec-info">
-                  <span class="spec-title">Best for black coffee</span>
+                  <span class="spec-title">Gentle &amp; Clear</span>
                   <span class="spec-sub">Brew style</span>
                 </div>
               </div>
 
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Pour Over / Dripper -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 4h14l-4 9H9L5 4z"/>
                     <path d="M12 13v7"/>
@@ -290,7 +561,7 @@
                   </svg>
                 </div>
                 <div class="spec-info">
-                  <span class="spec-title">Pour-over & French press</span>
+                  <span class="spec-title">Pour-over &amp; Press</span>
                   <span class="spec-sub">Best equipment</span>
                 </div>
               </div>
@@ -300,7 +571,7 @@
             <div class="grind-selection">
               <label for="grind-arabica" class="grind-label">Choose Grind Size:</label>
               <select id="grind-arabica" class="grind-select">
-                <option value="Whole Bean">Whole Beans (Uncut)</option>
+                <option value="Whole Bean">Whole Beans (Uncut Magic)</option>
                 <option value="Pour Over / Aeropress" selected>Medium Coarse (Pour Over / Chemex)</option>
                 <option value="French Press">Coarse (French Press / Cold Brew)</option>
                 <option value="South Indian Filter">Fine Medium (Filter Coffee)</option>
@@ -324,7 +595,7 @@
 
             <div class="color-indicator green-indicator">
               <span class="swatch-dot"></span>
-              <span>Our Colour: Forest Green</span>
+              <span>Our Colour: Forest Green • Calm &amp; Grounded</span>
             </div>
           </div>
         </article>
@@ -333,12 +604,14 @@
         <article class="product-card card-robusta" data-category="milk" data-id="robusta">
           <div class="card-badge-row">
             <span class="pill-type robusta-pill">ROBUSTA</span>
+            <span class="pill-crisis-tag">⏰ Snooze Nemesis</span>
             <span class="pill-weight">250 g</span>
           </div>
 
           <div class="product-img-wrap">
             <img src="images/robusta.jpg" alt="Idukki Robusta 250g coffee pouch" loading="lazy" class="product-img">
             <span class="flavor-floating-tag gi-tag">GI-Tagged Origin</span>
+            <span class="fun-card-sticker pop-sticker-blue">⚡ 2x Caffeine</span>
           </div>
 
           <div class="product-details">
@@ -350,28 +623,26 @@
             </div>
 
             <p class="product-description">
-              Robusta from the hills of Idukki, Kerala, with a rich, full body. Grown under shade with pepper and arecanut. Bold and smooth with chocolate and nutty notes. Perfect for South Indian filter coffee and milky cups.
+              Robusta from the hills of Idukki, Kerala, with a rich, full body and nearly double the caffeine punch. Grown under shade with pepper and arecanut. Bold, chocolatey, and ready to wake you up immediately.
             </p>
 
-            <!-- Specification Badges (from original flyer) -->
+            <!-- Specification Badges -->
             <div class="specs-grid">
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Coffee Bean -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <ellipse cx="12" cy="12" rx="6" ry="9"/>
                     <path d="M12 3C10 7 10 17 12 21"/>
                   </svg>
                 </div>
                 <div class="spec-info">
-                  <span class="spec-title">Chocolate & Nutty</span>
+                  <span class="spec-title">Chocolate &amp; Nutty</span>
                   <span class="spec-sub">Flavor profile</span>
                 </div>
               </div>
 
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Strong Cup -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
                     <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
@@ -381,14 +652,13 @@
                   </svg>
                 </div>
                 <div class="spec-info">
-                  <span class="spec-title">Strong & Full Bodied</span>
+                  <span class="spec-title">Strong &amp; Full Body</span>
                   <span class="spec-sub">Brew style</span>
                 </div>
               </div>
 
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Traditional Filter Tumbler -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="6" y="3" width="12" height="10" rx="1"/>
                     <path d="M7 13l1 8h8l1-8"/>
@@ -396,7 +666,7 @@
                   </svg>
                 </div>
                 <div class="spec-info">
-                  <span class="spec-title">Filter coffee & milk</span>
+                  <span class="spec-title">Filter Coffee &amp; Milk</span>
                   <span class="spec-sub">Best equipment</span>
                 </div>
               </div>
@@ -407,9 +677,9 @@
               <label for="grind-robusta" class="grind-label">Choose Grind Size:</label>
               <select id="grind-robusta" class="grind-select">
                 <option value="South Indian Filter" selected>Traditional South Indian Filter</option>
-                <option value="Moka Pot / Espresso">Fine (Moka Pot & Espresso)</option>
+                <option value="Moka Pot / Espresso">Fine (Moka Pot &amp; Espresso)</option>
                 <option value="French Press">Coarse (French Press)</option>
-                <option value="Whole Bean">Whole Beans (Uncut)</option>
+                <option value="Whole Bean">Whole Beans (Uncut Magic)</option>
                 <option value="Channi Grind">Channi (Household Straining)</option>
               </select>
             </div>
@@ -430,7 +700,7 @@
 
             <div class="color-indicator blue-indicator">
               <span class="swatch-dot"></span>
-              <span>Our Colour: Mountain Blue</span>
+              <span>Our Colour: Mountain Blue • High Voltage Energy</span>
             </div>
           </div>
         </article>
@@ -439,12 +709,14 @@
         <article class="product-card card-blend" data-category="versatile" data-id="blend">
           <div class="card-badge-row">
             <span class="pill-type blend-pill">BLEND</span>
+            <span class="pill-crisis-tag">🐢 Late Friend Companion</span>
             <span class="pill-weight">250 g</span>
           </div>
 
           <div class="product-img-wrap">
             <img src="images/blend.jpg" alt="Idukki Blend 250g coffee pouch" loading="lazy" class="product-img">
             <span class="flavor-floating-tag">Roaster's Choice</span>
+            <span class="fun-card-sticker pop-sticker-amber">🎯 Crowd Pleaser</span>
           </div>
 
           <div class="product-details">
@@ -456,42 +728,39 @@
             </div>
 
             <p class="product-description">
-              A balanced blend of our best hill coffees from Idukki. Smooth, rich and versatile, with chocolate, nut and spice notes. Roasted by The Hills Coffee Co., ground for your brewer the day we pack it. Great for both black and milk coffee, and works well with most brewers.
+              A balanced blend of our best hill coffees from Idukki. Smooth, rich and versatile with chocolate, nut and spice notes. Works with any brewer and stays delicious even if you're stuck waiting on your late friend.
             </p>
 
-            <!-- Specification Badges (from original flyer) -->
+            <!-- Specification Badges -->
             <div class="specs-grid">
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Coffee Bean -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <ellipse cx="12" cy="12" rx="6" ry="9"/>
                     <path d="M12 3C10 7 10 17 12 21"/>
                   </svg>
                 </div>
                 <div class="spec-info">
-                  <span class="spec-title">Chocolate, Nut & Spice</span>
+                  <span class="spec-title">Chocolate &amp; Nut</span>
                   <span class="spec-sub">Flavor profile</span>
                 </div>
               </div>
 
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Two Cups -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 8h1a3 3 0 0 1 0 6h-1"/>
                     <path d="M3 8h14v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V8z"/>
                   </svg>
                 </div>
                 <div class="spec-info">
-                  <span class="spec-title">Both Black & Milk</span>
+                  <span class="spec-title">Black &amp; Milk</span>
                   <span class="spec-sub">Brew style</span>
                 </div>
               </div>
 
               <div class="spec-cell">
                 <div class="spec-icon">
-                  <!-- Universal brewer -->
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M6 3h12v4H6z"/>
                     <path d="M6 7v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"/>
@@ -513,7 +782,7 @@
                 <option value="South Indian Filter">South Indian Traditional Filter</option>
                 <option value="French Press">French Press / Cold Brew</option>
                 <option value="Pour Over">Pour Over / Chemex</option>
-                <option value="Whole Bean">Whole Beans (Uncut)</option>
+                <option value="Whole Bean">Whole Beans (Uncut Magic)</option>
               </select>
             </div>
 
@@ -533,7 +802,108 @@
 
             <div class="color-indicator beige-indicator">
               <span class="swatch-dot"></span>
-              <span>Our Colour: Warm Beige</span>
+              <span>Our Colour: Warm Kraft Beige • Everyday Harmony</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Trio Tasting Bundle (Weekend Bed Mode) -->
+        <article class="product-card card-trio-bundle" data-category="bundle" data-id="trio">
+          <div class="card-badge-row">
+            <span class="pill-type trio-pill">FULL FLIGHT</span>
+            <span class="pill-crisis-tag">🛌 Bed Weekend Hero</span>
+            <span class="pill-weight">3 x 250 g</span>
+          </div>
+
+          <div class="product-img-wrap">
+            <img src="images/trio.jpg" alt="All 3 Coffees Trio Tasting Pack" loading="lazy" class="product-img">
+            <span class="flavor-floating-tag pop-tag-bundle">Best Value Bundle</span>
+            <span class="fun-card-sticker pop-sticker-purple">☁️ 100% Cozy</span>
+          </div>
+
+          <div class="product-details">
+            <div class="title-price-row">
+              <h3 class="product-title">Trio Tasting Pack</h3>
+              <div class="product-price">
+                <span class="currency">₹</span><span class="amount">1,320</span>
+              </div>
+            </div>
+
+            <p class="product-description">
+              All three signature hill coffees in one complete tasting set (750g total). Arabica for calm mornings, Robusta for high-voltage energy, and Blend for cozy slow sipping. The ultimate weekend bed companion.
+            </p>
+
+            <!-- Specification Badges -->
+            <div class="specs-grid">
+              <div class="spec-cell">
+                <div class="spec-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="12" rx="6" ry="9"/>
+                    <path d="M12 3C10 7 10 17 12 21"/>
+                  </svg>
+                </div>
+                <div class="spec-info">
+                  <span class="spec-title">All 3 Terroirs</span>
+                  <span class="spec-sub">Flavor profile</span>
+                </div>
+              </div>
+
+              <div class="spec-cell">
+                <div class="spec-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 8h1a3 3 0 0 1 0 6h-1"/>
+                    <path d="M3 8h14v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V8z"/>
+                  </svg>
+                </div>
+                <div class="spec-info">
+                  <span class="spec-title">Every Brew Style</span>
+                  <span class="spec-sub">Brew style</span>
+                </div>
+              </div>
+
+              <div class="spec-cell">
+                <div class="spec-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </div>
+                <div class="spec-info">
+                  <span class="spec-title">Free Shipping</span>
+                  <span class="spec-sub">Fast Delivery</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grind Selector -->
+            <div class="grind-selection">
+              <label for="grind-trio" class="grind-label">Choose Grind Size:</label>
+              <select id="grind-trio" class="grind-select">
+                <option value="All-Rounder Sampler" selected>Medium All-Rounder (All Brewers)</option>
+                <option value="Whole Bean">Whole Beans (Uncut Magic)</option>
+                <option value="South Indian Filter">South Indian Filter Fine-Medium</option>
+                <option value="French Press">French Press Coarse</option>
+                <option value="Pour Over">Pour Over Medium</option>
+              </select>
+            </div>
+
+            <div class="card-action-row">
+              <button class="btn btn-card add-to-cart-btn btn-trio-cart" data-product="Trio Tasting Pack (3 x 250g)" data-price="1320" data-select="grind-trio">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span>Add Trio Pack (₹1,320)</span>
+              </button>
+              <button class="btn btn-outline quick-brew-btn" data-target="blend">
+                <span>Brew Info</span>
+              </button>
+            </div>
+
+            <div class="color-indicator purple-indicator">
+              <span class="swatch-dot"></span>
+              <span>Our Colour: Complete Tri-Color Set • 750g Total</span>
             </div>
           </div>
         </article>
@@ -555,8 +925,8 @@
             </svg>
           </div>
           <div class="wa-title-wrap">
-            <h3 class="wa-title">WhatsApp Helper</h3>
-            <p class="wa-status">Which coffee suits me? • Always Online</p>
+            <h3 class="wa-title">WhatsApp Coffee Matchmaker</h3>
+            <p class="wa-status">What's your crisis today? • Roaster Online</p>
           </div>
           <span class="wa-badge">Interactive Quiz</span>
         </div>
@@ -564,23 +934,28 @@
         <div class="whatsapp-chat-body" id="chatBody">
           <!-- Bot message 1 -->
           <div class="wa-bubble incoming">
-            <p class="wa-bubble-title"><strong>How do you drink coffee?</strong></p>
-            <p class="wa-bubble-prompt">Select the option that best describes your daily brew ritual:</p>
+            <p class="wa-bubble-title"><strong>What's happening in your day right now?</strong></p>
+            <p class="wa-bubble-prompt">Tap the situation that matches your mood, and we'll prescribe the perfect cup:</p>
             
             <div class="quiz-options-list">
               <button class="quiz-opt-btn" data-choice="1" data-match="arabica">
                 <span class="opt-num">1</span>
-                <span class="opt-text">Black or light milk &rarr; <strong>Idukki Arabica</strong></span>
+                <span class="opt-text">📧 <strong>Meeting could've been an email</strong> &rarr; Smooth Pour-Over (Arabica)</span>
               </button>
 
               <button class="quiz-opt-btn" data-choice="2" data-match="robusta">
                 <span class="opt-num">2</span>
-                <span class="opt-text">Strong with milk, or filter coffee &rarr; <strong>Idukki Robusta</strong></span>
+                <span class="opt-text">⏰ <strong>Snoozed alarm five times</strong> &rarr; Turbo filter with milk (Robusta)</span>
               </button>
 
               <button class="quiz-opt-btn" data-choice="3" data-match="blend">
                 <span class="opt-num">3</span>
-                <span class="opt-text">Both, in one cup &rarr; <strong>Idukki Blend</strong></span>
+                <span class="opt-text">🐢 <strong>Friend is always late</strong> &rarr; Balanced all-day brew (Blend)</span>
+              </button>
+
+              <button class="quiz-opt-btn" data-choice="4" data-match="trio">
+                <span class="opt-num">4</span>
+                <span class="opt-text">🛌 <strong>Refuse to leave bed</strong> &rarr; Give me all 3! (Trio Pack)</span>
               </button>
             </div>
             <span class="wa-time">10:24 <span class="wa-check">✓✓</span></span>
@@ -595,16 +970,16 @@
         <!-- Custom WhatsApp Direct Action Bar -->
         <div class="whatsapp-chat-footer">
           <div class="wa-footer-inputs">
-            <input type="text" id="userBrewer" placeholder="Your brewer (e.g. South Indian Filter, French Press, Pour Over)" class="wa-input">
-            <input type="text" id="userArea" placeholder="Your delivery city/area" class="wa-input">
+            <input type="text" id="userBrewer" placeholder="Your brewer (e.g. South Indian Filter, Pour Over, French Press)" class="wa-input">
+            <input type="text" id="userArea" placeholder="Your delivery city/pincode" class="wa-input">
           </div>
           <button class="btn-send-whatsapp" id="sendWhatsAppBtn">
             <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
               <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/>
             </svg>
-            <span>Ask & Order on WhatsApp</span>
+            <span>Ask Roaster &amp; Order on WhatsApp</span>
           </button>
-          <p class="wa-footnote">Direct chat with our hill roasting team • No spam guarantee</p>
+          <p class="wa-footnote">Direct chat with our hill roasting team • No spam, pure coffee passion</p>
         </div>
       </div>
 
@@ -612,46 +987,54 @@
       <div class="guide-panel" id="comparison">
         <div class="guide-card">
           <div class="guide-header">
-            <span class="guide-icon">🍃</span>
+            <span class="guide-icon">⚔️</span>
             <div>
-              <h3 class="guide-title">Quick Guide: Arabica vs Robusta</h3>
-              <p class="guide-sub">Understanding the bean characteristics of Idukki terroir</p>
+              <h3 class="guide-title">The Friendly Showdown: Arabica vs Robusta</h3>
+              <p class="guide-sub">No coffee snobbery allowed. Here's what you need to know.</p>
             </div>
           </div>
 
           <div class="comparison-dual-grid">
             <div class="comparison-column arabica-col">
-              <div class="col-pill arabica-bg">Arabica</div>
+              <div class="col-pill arabica-bg">🌿 The Smooth Artist (Arabica)</div>
               <ul class="col-features">
-                <li><strong>Taste Profile:</strong> Smoother, more aromatic and a little brighter</li>
-                <li><strong>Acidity & Body:</strong> Gentle acidity, delicate refined body</li>
-                <li><strong>Caffeine:</strong> Lower caffeine, clean finish</li>
-                <li><strong>Best For:</strong> Black coffee, pour-overs, cold brew, and gentle extraction</li>
+                <li><strong>Taste Profile:</strong> Delicate chocolate, gentle cardamom spice, silky finish</li>
+                <li><strong>The Vibe:</strong> Camera off in meetings, quiet Sunday mornings</li>
+                <li><strong>Caffeine Punch:</strong> Gentle, focused lift without the jitters</li>
+                <li><strong>Best For:</strong> Black coffee, pour-overs, and French press</li>
               </ul>
+              <div class="fun-stat-bar">
+                <span class="stat-label">Zen Factor:</span>
+                <div class="bar-fill-wrap"><div class="bar-fill green-fill" style="width: 95%;"></div></div>
+              </div>
             </div>
 
             <div class="comparison-column robusta-col">
-              <div class="col-pill robusta-bg">Robusta</div>
+              <div class="col-pill robusta-bg">⚡ The Powerhouse (Robusta)</div>
               <ul class="col-features">
-                <li><strong>Taste Profile:</strong> Stronger, bolder and fuller in body</li>
-                <li><strong>Acidity & Body:</strong> Low acidity, dense crema and thick mouthfeel</li>
-                <li><strong>Caffeine:</strong> Nearly double the caffeine punch</li>
-                <li><strong>Best For:</strong> Milk coffee, South Indian filter, and intense espresso</li>
+                <li><strong>Taste Profile:</strong> Heavy dark chocolate, roasted hazelnut, thick crema</li>
+                <li><strong>The Vibe:</strong> 5 alarms snoozed, need an instant resurrection</li>
+                <li><strong>Caffeine Punch:</strong> Nearly double natural caffeine power</li>
+                <li><strong>Best For:</strong> Traditional South Indian filter, moka pot, milky cups</li>
               </ul>
+              <div class="fun-stat-bar">
+                <span class="stat-label">Wake-Up Factor:</span>
+                <div class="bar-fill-wrap"><div class="bar-fill blue-fill" style="width: 100%;"></div></div>
+              </div>
             </div>
           </div>
 
           <div class="callout-gi-box">
-            <div class="gi-badge-tag">THE HILLS NOTE</div>
+            <div class="gi-badge-tag">THE HILLS COFFEE TRUTH</div>
             <p class="callout-text">
-              <em>Not a budget option</em> &mdash; good Robusta, like <strong>Idukki Robusta</strong>, is a different, richer cup. Grown at high elevations under shade alongside pepper and spices, it carries a protected <strong>GI (Geographical Indication) tag</strong> and commands pride of place.
+              <em>Robusta isn't second place here!</em> Good Robusta, like <strong>Idukki Robusta</strong>, is a glorious, powerhouse cup. Grown at high elevations under rainforest canopies alongside pepper and wild spices, it holds a protected <strong>GI (Geographical Indication) tag</strong> and commands absolute respect.
             </p>
           </div>
 
           <div class="showcase-thumb-wrap">
             <img src="images/trio.jpg" alt="All three coffees on a rustic wooden bar table" class="showcase-trio-img">
             <div class="quote-tag">
-              <span class="quote-handwriting">&ldquo;Good coffee brings people together.&rdquo;</span>
+              <span class="quote-handwriting">&ldquo;Life happens. Coffee helps.&rdquo;</span>
             </div>
           </div>
         </div>
@@ -720,9 +1103,12 @@
   <section class="brew-guide-section" id="brew-guide">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-subtitle">EXTRACTION ESSENTIALS</span>
-        <h2 class="section-title">Brew It Like The Hills</h2>
-        <p class="section-lead">Master your brew with our tested ratios for Idukki specialty roasts.</p>
+        <div class="fun-section-pill">
+          <span class="pill-emoji">🫖</span>
+          <span class="pill-text">NO SNOBBERY ALLOWED</span>
+        </div>
+        <h2 class="section-title">Brew Like A Pro <span class="fun-highlight-sketch">(Without The Stress)</span></h2>
+        <p class="section-lead">Tested ratios for real human mornings. No laboratory scales or confusing jargon required.</p>
       </div>
 
       <div class="brew-methods-grid">
@@ -868,7 +1254,7 @@
         <p class="footer-bio">
           Authentic, aromatic shade-grown coffee cultivated in the mist of Idukki's high ranges, Kerala. Freshly roasted and ground to order.
         </p>
-        <p class="tag-handwritten footer-script">Real coffee from real hills.</p>
+        <p class="tag-handwritten footer-script">Life happens. Coffee helps.</p>
       </div>
 
       <div class="footer-col">
@@ -894,7 +1280,7 @@
       <div class="footer-col contact-col">
         <h4>Direct Roastery Desk</h4>
         <p>Idukki High Ranges, Kerala 685602, India</p>
-        <p><strong>WhatsApp:</strong> +91 98460 12345</p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/919074576756" target="_blank" rel="noopener">+91 90745 76756</a></p>
         <p><strong>Email:</strong> hello@thehillscoffee.co</p>
         <div class="footer-gi-notice">
           <span>🌿 GI Tagged Idukki Malabar Region</span>

@@ -77,25 +77,33 @@ function initCoffeeFinder() {
       num: '1',
       name: 'Idukki Arabica (250g)',
       color: '#1B3A2B',
-      tag: 'Best for Black & Pour-Over',
-      desc: 'Smooth and aromatic with delicate chocolate & spice notes. Grown at high altitude in the shade of pepper and cardamom vines.',
+      tag: '📧 The Meeting Survivor • Zen Pour-Over',
+      desc: 'Smooth and aromatic with delicate chocolate & spice notes. Grown under shade with pepper and cardamom. The ultimate companion for surviving 60-minute slide decks.',
       price: 460
     },
     robusta: {
       num: '2',
       name: 'Idukki Robusta (250g)',
       color: '#162E44',
-      tag: 'GI-Tagged • Full Bodied & Filter Coffee',
-      desc: 'Bold, creamy with rich chocolate & nutty tones. The gold standard of shade-grown Robusta for South Indian filter coffee & milk brews.',
+      tag: '⏰ The Snooze Nemesis • Turbo Caffeine',
+      desc: 'GI-tagged Kerala champion with 2x natural caffeine. Bold, velvety crema, thick mouthfeel. Defibrillates your sleepy soul in two sips.',
       price: 420
     },
     blend: {
       num: '3',
       name: 'Idukki Blend (250g)',
       color: '#B58B5C',
-      tag: 'The Balanced All-Rounder',
-      desc: 'The best of both worlds. Rich chocolate, nut, and spice balance that performs beautifully across all brewing equipment.',
+      tag: '🐢 The Late-Friend Companion • All-Rounder',
+      desc: 'The harmonious union of Arabica and Robusta. Never gets bitter as it cools down, keeping your blood pressure chill while waiting on that friend.',
       price: 440
+    },
+    trio: {
+      num: '4',
+      name: 'Trio Tasting Pack (3 x 250g)',
+      color: '#7B2CBF',
+      tag: '🛌 Weekend Bed Cocoon • All 3 Single Origins',
+      desc: 'Why pick one when you have 48 hours in bed? Arabica for morning reading, Robusta for midday fuel, and Blend for the afternoon movie.',
+      price: 1320
     }
   };
 
@@ -106,6 +114,8 @@ function initCoffeeFinder() {
 
       const matchKey = opt.getAttribute('data-match');
       const data = coffeeDetails[matchKey];
+      if (!data) return;
+
       selectedCoffee = data.name;
       selectedNumber = data.num;
 
@@ -120,7 +130,7 @@ function initCoffeeFinder() {
               Add to Bag (₹${data.price})
             </button>
             <a href="#collection" class="btn btn-outline" style="border-color: ${data.color}">
-              View Product
+              View Collection
             </a>
           </div>
         </div>
@@ -138,22 +148,43 @@ function initCoffeeFinder() {
     const brewer = userBrewerInput.value.trim() || 'Not specified';
     const area = userAreaInput.value.trim() || 'India';
 
-    const message = `Hello The Hills Coffee Co! 👋\n\nI used your online helper to find my coffee match:\n• Selected Choice: Option ${selectedNumber} (${selectedCoffee})\n• My Brewer: ${brewer}\n• Delivery Area: ${area}\n\nPlease share how I can order a fresh roasted batch.`;
+    const message = `Hello The Hills Coffee Co! ☕👋\n\nLife happens! I used your online helper to find my coffee match:\n• Selected Crisis / Choice: Option ${selectedNumber} (${selectedCoffee})\n• My Brewer: ${brewer}\n• Delivery City/Area: ${area}\n\nPlease share how I can order a freshly roasted batch.`;
 
     const encodedMsg = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/919846012345?text=${encodedMsg}`;
+    const whatsappUrl = `https://wa.me/919074576756?text=${encodedMsg}`;
 
     window.open(whatsappUrl, '_blank');
   });
 }
 
-// Quick add helper for recommendation card
+// Quick add helper for recommendation card & scenarios
 window.quickAddRecommendation = function(productName, price) {
   let grind = 'Medium All-Rounder';
   if (productName.includes('Arabica')) grind = 'Pour Over / Chemex';
   if (productName.includes('Robusta')) grind = 'South Indian Filter';
+  if (productName.includes('Trio')) grind = 'All-Rounder Sampler';
 
   addToCart(productName, price, grind);
+};
+
+window.quickAddTrio = function() {
+  addToCart('Trio Tasting Pack (3 x 250g)', 1320, 'All-Rounder Sampler');
+};
+
+window.filterByProduct = function(productId) {
+  const targetCard = document.querySelector(`.product-card[data-id="${productId}"]`);
+  const collectionSection = document.getElementById('collection');
+  if (collectionSection) {
+    collectionSection.scrollIntoView({ behavior: 'smooth' });
+  }
+  if (targetCard) {
+    setTimeout(() => {
+      targetCard.classList.add('card-highlight-pulse');
+      setTimeout(() => {
+        targetCard.classList.remove('card-highlight-pulse');
+      }, 2500);
+    }, 500);
+  }
 };
 
 // ==========================================
@@ -186,17 +217,17 @@ function initCart() {
 
   checkoutBtn.addEventListener('click', () => {
     if (cart.length === 0) {
-      showToast('Your bag is empty!');
+      showToast('Your coffee bag is lonely! Pick some beans.');
       return;
     }
 
     let itemsSummary = cart.map(item => `• ${item.name} (${item.grind}) x ${item.quantity} = ₹${item.price * item.quantity}`).join('\n');
     let total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
-    let message = `Hello The Hills Coffee Co! ☕\n\nI would like to place an order from your website:\n\n${itemsSummary}\n\n*Total Amount:* ₹${total}\n\nPlease confirm availability and payment details. Thank you!`;
+    let message = `Hello The Hills Coffee Co! ☕\n\nLife happens, coffee helps! I'd like to place an order from your website:\n\n${itemsSummary}\n\n*Total Amount:* ₹${total}\n\nPlease confirm availability and payment details. Thank you!`;
 
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/919846012345?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/919074576756?text=${encoded}`, '_blank');
   });
 }
 
@@ -216,7 +247,18 @@ function addToCart(name, price, grind) {
   }
 
   updateCartUI();
-  showToast(`${name} (${grind}) added to bag!`);
+
+  let funToast = `☕ Added ${name} to your bag!`;
+  if (name.includes('Arabica')) {
+    funToast = `☕ Meeting survivor! Added ${name} to your bag.`;
+  } else if (name.includes('Robusta')) {
+    funToast = `⚡ Snooze nemesis engaged! Added ${name} to your bag.`;
+  } else if (name.includes('Blend')) {
+    funToast = `✨ Late-friend patience unlocked! Added ${name} to your bag.`;
+  } else if (name.includes('Trio')) {
+    funToast = `🛌 Bed-bound weekend secured! Added Trio Pack to your bag.`;
+  }
+  showToast(funToast);
   openCart();
 }
 
